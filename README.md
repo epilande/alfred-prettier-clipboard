@@ -7,6 +7,10 @@
   <img src="./assets/prettier-clipboard-preview.png" width="530">
 </p>
 
+## Why?
+
+Sometimes you're writing code in a textarea where you don't have plugins/extension to automatically format your code. Rather than manually formatting your code, you can run prettier on it with this workflow.
+
 ## Requirements
 
 - [`node`](https://nodejs.org/) - Node.js JavaScript runtime.
