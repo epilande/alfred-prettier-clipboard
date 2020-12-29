@@ -4,6 +4,7 @@
 
 <p align="center">
   <strong>Format code in your clipboard with Prettier</strong></br>
+  <img src="./assets/prettier-clipboard-preview.png" width="530">
 </p>
 
 ## Requirements
@@ -16,7 +17,7 @@
 1. Install dependencies [`node`](https://nodejs.org/) and [`prettier`](https://prettier.io/) (must be installed globally).
 1. Download the Alfred Workflow ([Prettier-Clipboard.alfredworkflow](https://github.com/epilande/alfred-prettier-clipboard/releases/latest/download/Prettier-Clipboard.alfredworkflow)).
 1. Double-click to import into Alfred (requires Powerpack).
-1. Customize with `.prettierrc` (see [Configuration File](#Configuration-File)).
+1. Customize with `.prettierrc` (see [configuration file](#configuration-file)).
 
 ## Usage
 
@@ -29,7 +30,8 @@ Customize prettier configuration by adding `.prettierrc` file in the workflow or
 To add `.prettierrc` in the workflow
 
 1. Go to Alfred workflows, find Prettier Clipboard.
-1. Right-click -> Open in terminal.
+1. Right-click -> Open in terminal. </br>
+   <img src="./assets/open-in-terminal.png" width="300">
 1. `$ echo '{}' > .prettierrc` (see https://prettier.io/docs/en/options.html for available options).
 
 ## License
