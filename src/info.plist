@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1A5EE74F-77E2-42C5-90FF-4B858E0FEC14</string>
+				<string>3CF2847D-4374-4A64-8BF1-66FD0A006187</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -26,6 +26,31 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F986F42C-1EE5-4E34-93D3-BFBC856A608D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3CF2847D-4374-4A64-8BF1-66FD0A006187</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5A1A0193-2008-4F6F-81CC-26E4B5309BC9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>839B74DD-A163-426A-BCDD-F319F6138626</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1A5EE74F-77E2-42C5-90FF-4B858E0FEC14</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -61,40 +86,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Format successful</string>
-				<key>title</key>
-				<string>Prettier Clipboard</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>F986F42C-1EE5-4E34-93D3-BFBC856A608D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
-				<key>transient</key>
-				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.output.largetype</string>
 			<key>uid</key>
-			<string>1A5EE74F-77E2-42C5-90FF-4B858E0FEC14</string>
+			<string>5A1A0193-2008-4F6F-81CC-26E4B5309BC9</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -170,6 +182,76 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^\[error\].+SyntaxError</string>
+						<key>outputlabel</key>
+						<string>error</string>
+						<key>uid</key>
+						<string>839B74DD-A163-426A-BCDD-F319F6138626</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>3CF2847D-4374-4A64-8BF1-66FD0A006187</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>1A5EE74F-77E2-42C5-90FF-4B858E0FEC14</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Format successful</string>
+				<key>title</key>
+				<string>Prettier Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>F986F42C-1EE5-4E34-93D3-BFBC856A608D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>GitHub Repo: https://github.com/epilande/alfred-prettier-clipboard
@@ -189,30 +271,44 @@ prettier {parser} - Run prettier on your clipboard with selected {parser}.</stri
 		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>305</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>135</integer>
 		</dict>
 		<key>1A5EE74F-77E2-42C5-90FF-4B858E0FEC14</key>
 		<dict>
 			<key>xpos</key>
-			<integer>480</integer>
+			<integer>670</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>215</integer>
+		</dict>
+		<key>3CF2847D-4374-4A64-8BF1-66FD0A006187</key>
+		<dict>
+			<key>xpos</key>
+			<integer>515</integer>
+			<key>ypos</key>
+			<integer>155</integer>
 		</dict>
 		<key>4A92C8E2-8AEC-4B5C-820B-47EF1AB1A6C9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>55</integer>
+			<integer>90</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>135</integer>
+		</dict>
+		<key>5A1A0193-2008-4F6F-81CC-26E4B5309BC9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>670</integer>
+			<key>ypos</key>
+			<integer>55</integer>
 		</dict>
 		<key>F986F42C-1EE5-4E34-93D3-BFBC856A608D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>690</integer>
+			<integer>870</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>215</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
