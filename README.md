@@ -9,7 +9,8 @@
 
 ## Why?
 
-Sometimes you're writing code in a textarea where you don't have plugins/extension to automatically format your code. Rather than manually formatting your code, you can run prettier on it with this workflow.
+Sometimes you're writing code in a textarea where you don't have plugins/extension to automatically format your code.
+Rather than manually formatting, you can run prettier on it with this workflow.
 
 ## Requirements
 
@@ -33,10 +34,10 @@ Customize prettier configuration by adding `.prettierrc` file in the workflow or
 
 To add `.prettierrc` in the workflow
 
-1. Go to Alfred workflows, find Prettier Clipboard.
+1. Go to Alfred workflows, find Prettier Clipboard. You can also do this by typing `?prettier` in Alfred.
 1. Right-click -> Open in terminal. </br>
    <img src="./assets/open-in-terminal.png" width="300">
-1. `$ echo '{}' > .prettierrc` (see https://prettier.io/docs/en/options.html for available options).
+1. Create `.prettierrc` for example: `$ echo '{ "semi": false, "trailingComma": "all" }' > .prettierrc` (see https://prettier.io/docs/en/options.html for available options).
 
 ## License
 
