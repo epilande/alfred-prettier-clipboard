@@ -172,7 +172,18 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>GitHub Repo: https://github.com/epilande/alfred-prettier-clipboard
+
+Requirements:
+- node - Node.js JavaScript runtime.
+- prettier - Opinionated Code Formatter.
+
+Environment varilables:
+- PRETTIER_OPTIONS - Options to be passed to `prettier` command.
+- PRETTIER_PATH - Where to find `prettier`.
+
+Command:
+prettier {parser} - Run prettier on your clipboard with selected {parser}.</string>
 	<key>uidata</key>
 	<dict>
 		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
@@ -204,8 +215,17 @@
 			<integer>50</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>PRETTIER_OPTIONS</key>
+		<string>--trailing-comma none --single-quote</string>
+		<key>PRETTIER_PATH</key>
+		<string>/usr/local/bin</string>
+	</dict>
 	<key>variablesdontexport</key>
-	<array/>
+	<array>
+		<string>PRETTIER_OPTIONS</string>
+	</array>
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
