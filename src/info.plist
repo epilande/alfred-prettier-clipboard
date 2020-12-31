@@ -314,7 +314,7 @@ prettier {parser} - Run prettier on your clipboard with selected {parser}.</stri
 	<key>variables</key>
 	<dict>
 		<key>PRETTIER_OPTIONS</key>
-		<string>--trailing-comma none --single-quote</string>
+		<string></string>
 		<key>PRETTIER_PATH</key>
 		<string>/usr/local/bin</string>
 	</dict>
