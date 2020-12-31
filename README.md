@@ -28,6 +28,10 @@ Rather than manually formatting, you can run prettier on it with this workflow.
 
 `prettier {parser}` - Run prettier on your clipboard with selected `{parser}`.
 
+## Demo
+
+<img src="./assets/demo.gif" width="600">
+
 ## Environment variables
 
 | Key                | Default            | Description                                 |
