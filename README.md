@@ -61,6 +61,13 @@ To add `.prettierrc` in the workflow directory
 1. Create `.prettierrc` for example: `$ echo '{ "semi": false, "trailingComma": "all" }' > .prettierrc`
    (see https://prettier.io/docs/en/options.html for available options).
 
+## More workflows
+
+- 🔍 [alfred-browser-tabs](https://github.com/epilande/alfred-browser-tabs) - Search browser tabs from Chrome, Brave, & Safari.
+- 🤫 [alfred-be-quiet](https://github.com/epilande/alfred-be-quiet) - Workflow to automatically pause audio/video playing.
+- 🔐 [alfred-wifi-password](https://github.com/epilande/alfred-wifi-password) - Get Wi-Fi password from Keychain.
+- 🗝 [alfred-password-generator](https://github.com/epilande/alfred-password-generator) - Workflow to generate passwords.
+
 ## License
 
 [MIT License](https://oss.ninja/mit/epilande/)
