@@ -23,6 +23,7 @@ function run(args) {
     "html",
     "angular",
     "lwc",
+    "sql",
   ];
 
   const items = parsers.map((p) => ({
