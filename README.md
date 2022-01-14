@@ -61,6 +61,20 @@ To add `.prettierrc` in the workflow directory
 1. Create `.prettierrc` for example: `$ echo '{ "semi": false, "trailingComma": "all" }' > .prettierrc`
    (see https://prettier.io/docs/en/options.html for available options).
 
+#### SQL formatting
+
+Install plugin - `prettier-plugin-sql` by running 
+
+```
+npm i -D prettier prettier-plugin-sql
+```
+If you do not have npm run   
+
+```
+brew install node
+```
+
+
 ## More workflows
 
 - 🔍 [alfred-browser-tabs](https://github.com/epilande/alfred-browser-tabs) - Search browser tabs from Chrome, Brave, & Safari.
